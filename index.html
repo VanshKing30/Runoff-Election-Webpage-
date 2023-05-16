@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STV Election Form</title>
+    <link rel="stylesheet" href="styling.css">
+  </head>
+  <body>
+    <h1>STV Election Form</h1>
+    <form>
+      <fieldset id="candidate-fieldset">
+        <legend>Candidates</legend>
+        <div class="candidate">
+          <label for="candidate1">Candidate 1:</label>
+          <input type="text" id="candidate1" name="candidate1" required>
+        </div>
+        <div class="candidate">
+          <label for="candidate2">Candidate 2:</label>
+          <input type="text" id="candidate2" name="candidate2" required>
+        </div>
+        <div class="candidate">
+          <label for="candidate3">Candidate 3:</label>
+          <input type="text" id="candidate3" name="candidate3" required>
+        </div> 
+      </fieldset>
+
+      <fieldset id="voter-fieldset">
+        <legend>Voters</legend>
+        <div>
+          <label for="voter1">Voter 1:</label>
+          <section style="margin-left: 50px">
+            <label class="rank-label" for="voter1-rank1">Rank 1:</label>
+            <input class="rank-input" type="text" id="voter1-rank1" name="voter1-rank1" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label class="rank-label" for="voter1-rank2">Rank 2:</label>
+            <input class="rank-input" type="text" id="voter1-rank2" name="voter1-rank2" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label class="rank-label" for="voter1-rank3">Rank 3:</label>
+            <input class="rank-input" type="text" id="voter1-rank3" name="voter1-rank3" required>
+          </section>
+        </div>
+        <div>
+          <label for="voter2">Voter 2:</label>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter2-rank1">Rank 1:</label>
+            <input class="rank-input"  type="text" id="voter2-rank1" name="voter2-rank1" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter2-rank2">Rank 2:</label>
+            <input class="rank-input"  type="text" id="voter2-rank2" name="voter2-rank2" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter2-rank3">Rank 3:</label>
+            <input class="rank-input"  type="text" id="voter2-rank3" name="voter2-rank3" required>
+          </section>
+        </div>
+        <div>
+          <label for="voter3">Voter 3:</label>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter3-rank1">Rank 1:</label>
+            <input class="rank-input"  type="text" id="voter3-rank1" name="voter3-rank1" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter3-rank2">Rank 2:</label>
+            <input class="rank-input"  type="text" id="voter3-rank2" name="voter3-rank2" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter3-rank3">Rank 3:</label>
+            <input class="rank-input"  type="text" id="voter3-rank3" name="voter3-rank3" required>
+          </section>
+        </div>
+        <div>
+          <label for="voter4">Voter 4:</label>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter4-rank1">Rank 1:</label>
+            <input class="rank-input"  type="text" id="voter4-rank1" name="voter4-rank1" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter4-rank2">Rank 2:</label>
+            <input class="rank-input"  type="text" id="voter4-rank2" name="voter4-rank2" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter4-rank3">Rank 3:</label>
+            <input class="rank-input"  type="text" id="voter4-rank3" name="voter4-rank3" required>
+          </section>
+        </div>
+        <div>
+          <label for="voter5">Voter 5:</label>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter5-rank1">Rank 1:</label>
+            <input class="rank-input"  type="text" id="voter5-rank1" name="voter5-rank1" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter5-rank2">Rank 2:</label>
+            <input class="rank-input"  type="text" id="voter5-rank2" name="voter5-rank2" required>
+          </section>
+          <section style="margin-left: 50px">
+            <label  class="rank-label" for="voter5-rank3">Rank 3:</label>
+            <input class="rank-input"  type="text" id="voter5-rank3" name="voter5-rank3" required>
+          </section>
+        </div>
+      </fieldset>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+      <div>
+        <label for="winner">Winner:</label>
+        <input type="text" id="winner" name="winner" readonly>
+      </div>
+      
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
