@@ -25,7 +25,7 @@ let candidate_count = 3;
 
 function vote(voter, rank, name) {
   for (let i = 0; i < candidate_count; i++) {
-      if (candidates[i].name.trim() === name.trim()) {
+      if (candidates[i].name.trim().toUpperCase() === name.trim().toUpperCase()) {
           preferences[voter][rank] = i;
           return true;
       }
@@ -125,6 +125,7 @@ for (let i = 0; i < voter_count; i++) {
 
 // Example console log to display the votes array
 console.log(votes);
+
 
 
 for(let i = 0; i < voter_count; i++){
