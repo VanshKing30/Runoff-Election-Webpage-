@@ -35,6 +35,3 @@ This ranked-choice voting method ensures that the eventual winner is preferred b
 ## Credits
 This project was developed by Sarvesh Shahane. It was inspired by the "Runoff" problem set from [CS50](https://cs50.harvard.edu/x/), Harvard University's introduction to computer science course.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
