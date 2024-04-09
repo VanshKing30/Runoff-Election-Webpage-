@@ -24,6 +24,14 @@ let voter_count = 5;
 let candidate_count = 3;
 
 function vote(voter, rank, name) {
+  for (let i = 0; i < rank; i++) {
+      if (preferences[voter][i] === preferences[voter][rank]) {
+          // If the same candidate is already voted for a higher rank by the same voter, invalidate the vote
+          alert("Invalid vote! Candidate '" + name + "' is already voted for a higher rank by the same voter.");
+          break;
+          return false;
+      }
+  }
   for (let i = 0; i < candidate_count; i++) {
       if (candidates[i].name.trim() === name.trim()) {
           preferences[voter][rank] = i;
@@ -32,6 +40,7 @@ function vote(voter, rank, name) {
   }
   return false;
 }
+
 
 
 function tabulate() {
