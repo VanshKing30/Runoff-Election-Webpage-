@@ -16,8 +16,8 @@ class Candidate {
     }
 }
 
-let candidates = new Array(MAX_CANDIDATES);
-candidates = [];
+
+let candidates = [];
 
 
 let voter_count = 5;
