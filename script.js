@@ -28,7 +28,6 @@ function vote(voter, rank, name) {
       if (preferences[voter][i] === preferences[voter][rank]) {
           // If the same candidate is already voted for a higher rank by the same voter, invalidate the vote
           alert("Invalid vote! Candidate '" + name + "' is already voted for a higher rank by the same voter.");
-          break;
           return false;
       }
   }
